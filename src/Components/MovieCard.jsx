@@ -3,7 +3,7 @@ import "../css/MovieCard.css"
 
 function MovieCard({movie}) {
     function onFavorite(){
-        alert("Clicked")
+        alert("Clicked");
     }
   return (
     <div className='movie-card'>
