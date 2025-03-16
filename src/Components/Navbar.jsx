@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav className='navbar'>
         <div className="navbar-brand">
-            <Link to="/">M-Flix</Link>
+            <Link to="/">M-Flix</Link> 
         </div>
         <div className="navbar-links">
           <Link to='/' className='nav-link'>Home</Link>
