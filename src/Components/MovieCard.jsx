@@ -3,13 +3,14 @@ import "../css/MovieCard.css"
 import { useMovieContext } from '../Contexts/MovieContext'
 
 function MovieCard({movie}) {
+
     const {addFavorites, removeFromFavorites, isFavorites} = useMovieContext();
     const favorite = isFavorites(movie.id);
     function onFavorite(e){
         e.preventDefault();
         if(favorite) removeFromFavorites(movie.id)
             else addFavorites(movie)
-    }
+
   return (
     <div className='movie-card'>
         <div className="movie-poster">
@@ -24,6 +25,7 @@ function MovieCard({movie}) {
         </div>
     </div>
   )
+}
 }
 
 export default MovieCard
