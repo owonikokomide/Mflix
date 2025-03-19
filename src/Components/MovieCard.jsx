@@ -6,11 +6,15 @@ function MovieCard({movie}) {
 
     const {addFavorites, removeFromFavorites, isFavorites} = useMovieContext();
     const favorite = isFavorites(movie.id);
-    function onFavorite(e){
+    function onFavorite(e) {
         e.preventDefault();
-        if(favorite) removeFromFavorites(movie.id)
-            else addFavorites(movie)
-
+        if (favorite) {
+            removeFromFavorites(movie.id);
+        } else {
+            addFavorites(movie);
+        }
+    }
+    
   return (
     <div className='movie-card'>
         <div className="movie-poster">
@@ -26,6 +30,6 @@ function MovieCard({movie}) {
     </div>
   )
 }
-}
+
 
 export default MovieCard
