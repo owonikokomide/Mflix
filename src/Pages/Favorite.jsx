@@ -2,7 +2,7 @@ import React from 'react'
 import '../css/Favorites.css'
 import { useMovieContext } from '../Contexts/MovieContext'
 import MovieCard from '../Components/MovieCard'
-
+ 
 function Favorite() {
   const {favorites} = useMovieContext();
   if(favorites) 
