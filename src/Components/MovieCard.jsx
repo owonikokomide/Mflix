@@ -10,7 +10,7 @@ function MovieCard({movie}) {
         e.preventDefault();
         if (favorite) {
             removeFromFavorites(movie.id);
-        } else {
+        } else { 
             addFavorites(movie);
         }
     }
