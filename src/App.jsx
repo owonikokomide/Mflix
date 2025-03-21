@@ -9,8 +9,9 @@ function App() {
 
   return (
     <MovieProvider>
-      <Navbar />
+      
    <main className='main-content'>
+   <Navbar />
     <Routes>
      <Route path='/' element={<Home />}/>
      <Route path='/favorite' element={<Favorite />}/>
