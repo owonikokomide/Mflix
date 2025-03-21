@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React from 'react'
 import '../css/Favorites.css'
 import { useMovieContext } from '../Contexts/MovieContext'
@@ -17,16 +17,6 @@ function Favorite() {
 </div> 
 </div>
 );
-=======
-import React from 'react';
-import '../css/Favorites.css';
-import { useMovieContext } from '../Contexts/MovieContext';
-import MovieCard from '../Components/MovieCard';
-
-function Favorite() {
-  const { favorites } = useMovieContext();
-
->>>>>>> f61fb43 (css adjusted)
   return (
     <div className='favorites'>
       <h2>Your Favorites</h2>
@@ -46,8 +36,4 @@ function Favorite() {
   );
 }
 
-<<<<<<< HEAD
 export default Favorite
-=======
-export default Favorite;
->>>>>>> f61fb43 (css adjusted)
